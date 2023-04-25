@@ -98,7 +98,7 @@ class Hexo2Hugo(object):
                                 body += line
                         else:
                             body += line
-                meta = yaml.load(meta_yaml)
+                meta = yaml.full_load(meta_yaml)
 
                 self.logger.info("Process {} now, meta: {}, body length: {}".format(hexo_file, meta, len(body)))
 
